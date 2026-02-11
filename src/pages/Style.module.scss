@@ -56,8 +56,14 @@
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 500px) {
     .main {
-        height: 220vh;
+        height: auto;
+        margin-block: 24px;
+
+        h1{
+            text-align: center;
+            margin-bottom: 24px;
+        }
     }
 }

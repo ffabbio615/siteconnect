@@ -82,7 +82,7 @@
         max-width: 522px;
         width: 100%;
       }
-      
+
       .info {
         justify-content: space-between;
         align-items: center;
@@ -125,15 +125,29 @@
       padding: 2px;
   
       h1 {
-        font-size: 60px !important;
+        padding-block: 24px;
+        font-size: 40px !important;
+        line-height: 48px;
       }
   
       p {
-        font-size: 16px;
+        font-size: 12px;
+      }
+
+      button{
+        max-width: 300px;
+        padding: 8px 0;
+        margin-top: 24px;
+        @include fontConfig("Source Sans 3", 600, 20px, white);
       }
   
       .infoDados{
         flex-direction: column;
+        margin-top: 8px;
+
+        article{
+          margin-bottom: 24px;
+        }
       }
     }
   }
