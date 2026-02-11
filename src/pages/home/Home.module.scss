@@ -1,0 +1,137 @@
+@mixin fontConfig($font-family, $font-weight, $font-size, $color){
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+
+    .info{
+        background-color: white;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 60px;
+        max-width: 800px;
+
+        h1{
+            @include fontConfig("Source Sans 3", 700, 86px, #205691);
+            max-width: 45rem;
+        }
+
+        p{
+            @include fontConfig("inter", 400, 24px, #205691);
+            max-width: 45rem;
+        }
+
+        button{
+            max-width: 332px;
+            padding: 20px 0;
+            background-color: #F27267;
+            color: white;
+            @include fontConfig("Source Sans 3", 600, 24px, white);
+            border: none;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #d44a3d;
+            }
+        }
+    }
+
+    .infoDados{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+
+        article{
+            text-align: center;
+
+            h2{
+                @include fontConfig("Source Sans 3", 700, 50px, #205691);
+            }
+
+            h3{
+                @include fontConfig("inter", 400, 20px, #205691);
+            }
+        }
+    }
+
+    img{
+        flex: 1;
+        display: block;
+        max-width: 100%;
+        min-width: 0;
+        object-fit: contain;
+    }
+}
+
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+
+      img {
+        max-width: 522px;
+        width: 100%;
+      }
+  }
+
+  .info {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+      h1 {
+        font-size: 80px;
+      }
+
+      h1, p {
+        text-align: center;
+      }
+
+      button {
+        margin: 20px 0;
+        font-size: 20px;
+        padding: 10px;
+      }
+  }
+
+  .infoDados div {
+    width: 120px;
+
+      h2 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 12px;
+      }
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    height: 1000px;
+  }
+  .info h1 {
+    font-size: 60px;
+  }
+
+  .info p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+    .infoDados{
+        flex-direction: column;
+    }
+}

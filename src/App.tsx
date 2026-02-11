@@ -6,7 +6,8 @@ import Volunteering from "./pages/volunteering/Volunteering";
 import User from "./pages/user/User";
 import LectureEvents from "./pages/lecturesEvents/LectureEvents";
 import Mentoring from "./pages/mentoring/Mentoring";
-import Header from "../src/components/header/Header";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   return(
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/donations" element={<Donations />} />
         <Route path="/mentoring" element={<Mentoring />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

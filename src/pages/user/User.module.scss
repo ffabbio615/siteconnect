@@ -1,0 +1,88 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 24px;
+        width: 80%;
+        max-width: 1200px;
+        border: 1px solid #EFEEEA;
+        border-radius: 16px;
+    
+
+        img{
+            width: 300px;
+            border: 5px solid #00AAFF;
+            border-radius: 50%;
+        }
+
+        .userInfo{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 90%;
+
+            .titleContainer{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 8px;
+            
+                h1{
+                    font-family: "Source Sans 3", sans-serif;
+                    font-size: 32px;
+                    line-height: 32px;
+                }
+
+                h2{
+                    font-family: "Source Sans 3", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #23a835;
+                    padding-left: 2px;
+                }
+            }
+
+            p{
+                font-family: "Source Sans 3", sans-serif;
+                font-size: 18px;
+                line-height: 22px;
+                text-shadow: 2px 3px 4px rgba(0,0,0,0.3);
+            }
+
+            ul:first-of-type{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    font-family: "Source Sans 3", sans-serif;
+                    font-size: 18px;
+                }
+            }
+
+            ul:last-of-type{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                li{
+                    background-color: #D4E7D6;
+                    color: #278733;
+                    padding: 4px 12px;
+                    border-radius: 16px;
+                    font-family: "Source Sans 3", sans-serif;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
