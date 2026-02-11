@@ -52,7 +52,7 @@
                 font-family: "Source Sans 3", sans-serif;
                 font-size: 18px;
                 line-height: 22px;
-                text-shadow: 2px 3px 4px rgba(0,0,0,0.3);
+                text-shadow: 2px 3px 4px rgba(0,0,0,0.2);
             }
 
             ul:first-of-type{
@@ -81,6 +81,96 @@
                     border-radius: 16px;
                     font-family: "Source Sans 3", sans-serif;
                     font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main{
+        padding: 20px;
+
+        section{
+            flex-direction: column;
+            width: 100%;
+            max-width: none;
+
+            img{
+                width: 200px;
+            }
+
+            .userInfo{
+                width: 100%;
+                align-items: center;
+                text-align: center;
+
+                .titleContainer{
+                    h1{
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
+
+                    h2{
+                        font-size: 14px;
+                    }
+                }
+
+                p{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                ul:first-of-type{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main{
+        padding: 20% 24px;
+        align-items: start;
+        height: auto;
+
+        section{
+            img{
+                width: 220px;
+            }
+
+            .userInfo{
+                .titleContainer{
+                    h1{
+                        font-size: 28px;
+                        line-height: 30px;
+                    }
+
+                    h2{
+                        font-size: 14px;
+                    }
+                }
+
+                p{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                ul:first-of-type{
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                    margin-bottom: 16px;
+
+                    li{
+                        font-size: 16px;
+                    }
+                }
+
+                ul:last-of-type{
+                    justify-content: center;
                 }
             }
         }

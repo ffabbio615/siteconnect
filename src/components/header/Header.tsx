@@ -54,7 +54,7 @@ export default function Header() {
           </nav>
         }
 
-        <img onClick={toggleMenu} className={s.imgUser} src="https://avatars.githubusercontent.com/u/126684842?v=4" alt="Imagem do usuário" />
+        <img onClick={toggleMenu} className={s.imgUser} src="./images/profile.jpg" alt="Imagem do usuário" />
       {
         openMenu &&
         <nav ref={menuRef} onMouseLeave={() => setOpenMenu(false)} className={s.navUser}>

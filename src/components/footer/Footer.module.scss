@@ -5,3 +5,11 @@
     font-weight: 400;
     background-color: #E9EFF4;
 }
+
+
+@media (max-width: 500px) {
+    .footer{
+        padding: 12px;
+        font-size: 12px;
+    }
+}

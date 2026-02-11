@@ -9,7 +9,7 @@ export default function User() {
         <img src="./images/profile.jpg" alt="Imagem do usuário" />
         <div className={s.userInfo}>
           <div className={s.titleContainer}>
-            <h1>Bem-vindo, Usuário!</h1>
+            <h1>Bem-vindo, Fábio Marques!</h1>
             <h2>Voluntário Ativo</h2>
           </div>
           <p>Desenvolvedor movido por propósito, uso a tecnologia como ponte para conectar pessoas e gerar impacto positivo na comunidade.</p>
@@ -21,8 +21,8 @@ export default function User() {
 
           <ul>
             <li>Natureza</li>
-            <li>Tecnologia</li>
             <li>Design</li>
+            <li>Tecnologia</li>
             <li>Rock</li>
           </ul>
 

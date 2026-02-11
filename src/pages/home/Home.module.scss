@@ -18,7 +18,6 @@
         flex-direction: column;
         justify-content: space-evenly;
         padding: 60px;
-        max-width: 800px;
 
         h1{
             @include fontConfig("Source Sans 3", 700, 86px, #205691);
@@ -83,55 +82,59 @@
         max-width: 522px;
         width: 100%;
       }
+      
+      .info {
+        justify-content: space-between;
+        align-items: center;
+    
+          h1 {
+            font-size: 80px;
+          }
+    
+          h1, p {
+            text-align: center;
+          }
+    
+          button {
+            margin: 20px 0;
+            font-size: 20px;
+            padding: 10px;
+            width: 500px;
+          }
+    
+          .infoDados div {
+            width: 120px;
+        
+              h2 {
+                font-size: 30px;
+              }
+              h3 {
+                font-size: 12px;
+              }
+          }
+      }
   }
 
-  .info {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-
-      h1 {
-        font-size: 80px;
-      }
-
-      h1, p {
-        text-align: center;
-      }
-
-      button {
-        margin: 20px 0;
-        font-size: 20px;
-        padding: 10px;
-      }
-  }
-
-  .infoDados div {
-    width: 120px;
-
-      h2 {
-        font-size: 30px;
-      }
-      h3 {
-        font-size: 12px;
-      }
-  }
 }
 
 @media (max-width: 500px) {
   .main {
-    height: 1000px;
-  }
-  .info h1 {
-    font-size: 60px;
-  }
+    height: auto;
 
-  .info p {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 500px) {
-    .infoDados{
+    .info{
+      padding: 2px;
+  
+      h1 {
+        font-size: 60px !important;
+      }
+  
+      p {
+        font-size: 16px;
+      }
+  
+      .infoDados{
         flex-direction: column;
+      }
     }
+  }
 }
