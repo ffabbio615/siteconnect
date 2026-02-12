@@ -152,3 +152,42 @@
     }
   }
 }
+
+@media (max-width: 200px) {
+  .main {
+    height: auto;
+    padding: 0 8px;
+
+    .info{
+      padding: 2px;
+      width: 100%;
+  
+      h1 {
+        padding-block: 12px;
+        font-size: 24px !important;
+        line-height: 28px;
+      }
+
+      button{
+        max-width: 90%;
+        @include fontConfig("Source Sans 3", 600, 12px, white);
+      }
+  
+      .infoDados{
+        margin-top: 0;
+
+        article{
+          margin-bottom: 12px;
+
+          h2{
+            font-size: 28px;
+          }
+
+          h3{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

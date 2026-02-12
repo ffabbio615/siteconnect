@@ -70,3 +70,22 @@
         }
     }
 }
+
+@media (max-width: 200px) {
+    .main {
+        padding-inline: 12px;
+        margin-block: 8px;
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        section {
+
+            article {
+                min-width: 100%;
+            }
+        }
+    }
+}

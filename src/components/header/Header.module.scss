@@ -126,3 +126,36 @@
         }
     }
 }
+
+@media (max-width: 200px) {
+    .header {
+
+        .imgLogo{
+            max-width: 40px;
+        }
+
+        .nav {
+            .link {
+                font-size: 16px;
+                padding: 5px 10px;
+
+                &:hover {
+                    padding-inline: 20px;
+                }
+            }
+        }
+
+        .imgUser{
+            width: 40px;
+            height: 40px;
+        }
+
+        .navUser{
+            top: 58px;
+
+            a{
+                font-size: 13px;
+            }
+        }
+    }
+}
