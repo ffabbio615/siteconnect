@@ -7,7 +7,7 @@ export default function Donations() {
     <main className={s.main}>
       <h1>Doação</h1>
       <section>
-        <article>
+        <article className={s.articlesContainer}>
           <InfoCard 
           img="./images/instituto-grande-familia.png" 
           alt="Imagem de uma pessoa carregando uma caixa de doação com alimentos" 

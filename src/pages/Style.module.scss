@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-evenly;
     height: 100vh;
-    padding: 0 20px 20px 12px;
+    padding: 0 20px 12px 20px;
     overflow-y: scroll;
 
     h1 {
@@ -19,6 +19,7 @@
         justify-content: space-around;
         column-gap: 5px;
         width: 100%;
+        flex-wrap: wrap;
 
 
         article {
@@ -33,7 +34,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
     .main {
         height: auto;
         margin-block: 24px;
@@ -45,21 +46,20 @@
         }
 
         section {
-            flex-wrap: wrap;
             gap: 10px;
-
-            article {
-                min-width: 252px;
-            }
 
             article:not(:last-child) {
                 border-right: none;
+            }
+
+            .articlesContainer:first-of-type {
+                border-right: 1px solid #CBCBCB;
             }
         }
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .main {
         height: auto;
         margin-block: 24px;
@@ -67,6 +67,17 @@
         h1{
             text-align: center;
             margin-bottom: 24px;
+        }
+
+        section {
+
+            article {
+                min-width: 100%;
+            }
+
+            .articlesContainer:first-of-type {
+                border-right: none;
+            }
         }
     }
 }

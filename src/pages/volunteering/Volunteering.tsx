@@ -6,7 +6,7 @@ export default function Volunteering() {
     <main className={s.main}>
       <h1>Voluntariado</h1>
       <section>
-        <article>
+        <article className={s.articlesContainer}>
           <InfoCard 
           img="./images/mutirao-reciclagem.png" 
           alt="Imagem de pessoas coletando lixo para reciclagem" 

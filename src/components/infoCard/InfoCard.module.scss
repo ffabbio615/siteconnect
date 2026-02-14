@@ -55,15 +55,20 @@
     }
 }
 
+@media (max-width: 500px) {
+        .article{
+
+            img{
+                max-width: 100%;
+            }
+        }
+}
+
 
 @media (max-width: 200px) {
         .article{
             row-gap: 8px;
             margin-bottom: 18px;
-
-            img{
-                max-width: 100%;
-            }
 
             h2{
                 font-size: 18px;

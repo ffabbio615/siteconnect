@@ -10,6 +10,8 @@
     justify-content: space-around;
     margin-bottom: 20px;
     padding: 0px 20px;
+    height: 100vh;
+    overflow-y: scroll;
 
     .info{
         background-color: white;
@@ -32,6 +34,7 @@
         button{
             max-width: 332px;
             padding: 20px 0;
+            margin-top: 20px;
             background-color: #F27267;
             color: white;
             @include fontConfig("Source Sans 3", 600, 24px, white);
@@ -72,7 +75,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .main {
     flex-direction: column;
     align-items: center;
@@ -153,7 +156,7 @@
   }
 }
 
-@media (max-width: 200px) {
+@media (max-width: 300px) {
   .main {
     height: auto;
     padding: 0 8px;

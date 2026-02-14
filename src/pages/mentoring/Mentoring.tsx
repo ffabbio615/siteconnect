@@ -6,7 +6,7 @@ export default function Mentoring() {
     <main className={s.main}>
       <h1>Mentoria</h1>
       <section>
-        <article>
+        <article className={s.articlesContainer}>
           <InfoCard 
           img="./images/mentoria-carreira-emprego.png" 
           alt="Imagem de documentos e pessoas gesticulando sobre uma mesa de trabalho" 

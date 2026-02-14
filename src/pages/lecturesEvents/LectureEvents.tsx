@@ -6,7 +6,7 @@ export default function LectureEvents() {
     <main className={s.main}>
       <h1>Eventos & Palestras</h1>
       <section>
-        <article>
+        <article className={s.articlesContainer}>
           <InfoCard 
           img="./images/empoderando-jovens-futuro.png" 
           alt="Imagem de jovens participando de uma palestra" 
